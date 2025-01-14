@@ -1,3 +1,10 @@
 #!/usr/bin/env ruby
-# This script matches strings like htn, hbtn, hbbtn, hbbbtn
-puts ARGV[0].scan(/hbt{0,}n/).join
+
+# Accepts the first argument from the command line
+input = ARGV[0]
+
+# Regular expression to match the pattern
+regex = /hb?t?n/
+
+# Prints matches
+puts input.scan(regex).join
