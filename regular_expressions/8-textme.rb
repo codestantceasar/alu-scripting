@@ -4,7 +4,7 @@
 input = ARGV[0]
 
 # Regular expression to capture sender, receiver, and flags
-regex = /from:([^ ]+).*to:([^ ]+).*flags:([^\]]+)/
+regex = /from:([^ \]]+).*to:([^ \]]+).*flags:([^\]]+)/
 
 # Match and capture the groups
 matches = input.match(regex)
